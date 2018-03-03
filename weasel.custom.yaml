@@ -1,0 +1,22 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.9.30
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Sun Feb 25 10:28:25 2018"
+  rime_version: 1.2.9
+patch:
+  "style/color_scheme": dota_2
+  "style/font_face": "Source Han Serif K"
+  "style/font_point": 15
+  "style/horizontal": true
+  "style/inline_preedit": true
+  "style/layout/border_width": 0
+  "style/layout/candidate_spacing": 20
+  "style/layout/hilite_padding": 10
+  "style/layout/hilite_spacing": 10
+  "style/layout/margin_x": 10
+  "style/layout/margin_y": 10
+  "style/layout/min_height": 0
+  "style/layout/min_width": 0
+  "style/layout/round_corner": 0
+  "style/layout/spacing": 10
