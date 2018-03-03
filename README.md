@@ -19,11 +19,14 @@ the 98wubi tables for RIME
 
 这些码表可以适用于 RIME 的所有前端：
 
+
 * 安卓上的同文输入法
 * Win 上的小狼毫、以及PIME
 * MacOS 上的鼠须管
 * Linux 上的 fcitx-rime 和 ibus-rime
 * iOS 上的 iRime
+
+
 
 ````
 
