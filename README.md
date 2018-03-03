@@ -35,7 +35,6 @@ the 98wubi tables for RIME
 
 98五笔既无专利限制，又无版权约束，您可以随意使用、修改、传播之。
 
-````
 
 98五笔资源库中，有打包好的小狼毫98五笔版、PIME-98五笔版、
 
@@ -43,4 +42,4 @@ the 98wubi tables for RIME
 
 地址：[98五笔资源库](http://yanhuacuo.ys168.com)
 
-````
+
