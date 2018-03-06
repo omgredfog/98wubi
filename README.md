@@ -43,6 +43,6 @@ the 98wubi tables for RIME
 
 小小输入法98五笔版、以及鼠须管和同文输入法，由98五笔的几位管理员维护。
 
-地址：[98五笔资源库](http://yanhuacuo.ys168.com)
+地址：[98五笔资源库](http://98wb.ys168.com)
 
 
