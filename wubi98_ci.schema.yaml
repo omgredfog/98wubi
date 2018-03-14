@@ -53,7 +53,7 @@ speller:
   auto_select: true
   delimiter: "`"
   max_code_length: 4
-  
+  auto_clear: max_length
 
 fixed:
   # ↓ 字典文件 
