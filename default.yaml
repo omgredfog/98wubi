@@ -8,9 +8,7 @@ schema_list:
   - schema: wubi98_qm
   - schema: wubi98_ci
   - schema: wubi98_trad
-  - schema: wubi98_tw
-  - schema: wubi98_ts
-  - schema: wubi98_U
+  
 switcher:
   caption: 〔方案選單〕
   hotkeys:
