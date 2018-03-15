@@ -81,6 +81,7 @@ ts:
   enable_user_dict: false
   disable_user_dict_for_patterns:
     - "^z.*$"  
+
 fixed:
   # ↓ 字典文件 
   dictionary: wubi98_tw
