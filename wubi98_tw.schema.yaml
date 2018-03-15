@@ -59,6 +59,8 @@ speller:
 ts:
   # ↓ 字典文件 
   dictionary: wubi98_ts
+  # ↓ 在本地生成的用户词典名称
+  user_dict: 98wb  
   # ↓ 用户词典格式，tabledb（文本） 或 userdb （二进制）。
   db_class: tabledb
   # ↓ 该翻译器出字优先级别
