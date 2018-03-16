@@ -58,6 +58,13 @@ speller:
 fixed:
   # ↓ 字典文件 
   dictionary: wubi98_jian
+
+# 如果需要打自定义词库 wubi98_jian.extended.dict.yaml 中的词条
+# 请启用下面的指令，并注释掉第60行对 wubi98_jian 的調用。
+# dictionary: wubi98_jian.extended
+# 扩展词库 wubi98_jian.extended 可以手动批量加新词，并以出简单字码表+自定义词库的方式工作
+# 扩展词库非常适合专业性强的写作场景
+
   # ↓ 在本地生成的用户词典名称
   user_dict: 98wb  
   # ↓ 用户词典格式，tabledb（文本） 或 userdb （二进制）。
@@ -83,6 +90,13 @@ fixed:
 translator:
   # ↓ 字典文件 
   dictionary: wubi98_jian
+  
+# 如果需要打自定义词库 wubi98_jian.extended.dict.yaml 中的词条
+# 请启用下面的指令，并注释掉第 92 行对 wubi98_jian 的調用。
+# dictionary: wubi98_jian.extended
+# 扩展词库 wubi98_jian.extended 可以手动批量加新词，并以出简单字码表+自定义词库的方式工作
+# 扩展词库非常适合专业性强的写作场景
+  
   # ↓ 在本地生成的用户词典名称
   user_dict: 98wb  
   # ↓ 用户词典格式，tabledb（文本） 或 userdb （二进制）。
