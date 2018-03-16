@@ -9,7 +9,8 @@
 # 这个方案选单（98五笔·繁体简码），仅仅是为了验证opencc转制的效果，以及上屏的排序情况。不需要把它加在「default.yaml」中。
 # 如果你对这种设定不满意，可以按照上述说明，将单字取出，编码删掉，从「98五笔单字全码」中调取「全码」，然后酌情保留 2 个编码或 3 个编码，制作新的、
 # 符合繁体拆解规则的「繁体简码」。当然，你所有的处理，目标对象是「wubi98_ts.dict.yaml」。
-# 
+# 「wubi98_ts.dict.yaml」作为「98五笔-繁体」的一部分，在「wubi98_tw.schema.yaml」中被加载调用。
+# 再次强调，本选单（wubi98_ts.schema.yaml），仅仅只是为了验证「wubi98_ts.dict.yaml」的效果，不需要写到「default.yaml」中。
 #
 schema:
   schema_id: wubi98_ts
