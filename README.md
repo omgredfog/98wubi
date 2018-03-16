@@ -14,7 +14,7 @@ the 98wubi tables for RIME
 * 繁体字以及繁体词组（由繁体字编码组词）优先的98五笔码表
 * 覆盖unicode全体汉字的超集码表
 
-![pic](http://wx4.sinaimg.cn/large/005YTWw6ly1fperdnk3hej30go0gotbn.jpg)
+![pic](http://wx4.sinaimg.cn/large/005YTWw6ly1fperyx0oxnj306u09z0so.jpg)
 
 上述98五笔码表，做了一些适应于 RIME 的码表配置，使得可以默认启用 RIME 的输入建议功能，
 
