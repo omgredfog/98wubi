@@ -6,6 +6,11 @@ customization:
   rime_version: 1.2.9
 patch:
   "style/color_scheme": dota_2
+  
+  # 如果有打「超集」的需求，务必改为「simsun」，因为只有它能支持全部 unicode 里的汉字，有且仅有，独一无二。字号 18~22 较适宜。
+  # 如果有打繁体字的需求，建议使用思源宋体里的「Source Han Serif K」这一款，非常养眼。字号 18~22 较适宜。
+  # 超集字体，以及思源字体打包下载，可往「http://98wb.ys168.com」。
+  
   "style/font_face": "Source Han Serif K"
   "style/font_point": 15
   "style/horizontal": true
