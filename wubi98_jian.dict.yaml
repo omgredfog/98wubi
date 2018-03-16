@@ -34,7 +34,7 @@ encoder:
       formula: "AaAbBaBb"
     - length_equal: 3
       formula: "AaBaCaCb"
-    - length_in_range: [4, 10]
+    - length_in_range: [4, 19]
       formula: "AaBaCaZa"
 ...
 工	a	27558	aaaa
