@@ -59,7 +59,7 @@ translator:
   enable_encoder: false
   encode_commit_history: false
   max_phrase_length: 4
-  enable_completion: false
+  enable_completion: true
   enable_user_dict: false
   disable_user_dict_for_patterns:
     - "^z.*$"
