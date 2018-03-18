@@ -6,7 +6,7 @@ config_version: "0.10"
 #app_options:
 #  cmd.exe:
 #    ascii_mode: true
-# 仅有「simsun」字体了满足全部 unicode 汉字显示的需求，为正常显示超集字体，默认设置为「simsun」，如无打超集需求，可以自定义别的字体。
+# 仅有「simsun」字体满足全部 unicode 汉字显示的需求，为正常显示超集字体，默认设置为「simsun」，如无打超集需求，可以自定义别的字体。
 style:
   color_scheme: ink
   font_face: "simsun"
