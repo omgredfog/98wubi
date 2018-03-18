@@ -40,7 +40,7 @@ engine:
   translators:
     - punct_translator
     - script_translator
-    - reverse_lookup_translator
+
 
 speller:
   alphabet: zyxwvutsrqponmlkjihgfedcba
@@ -65,15 +65,6 @@ translator:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
-
-reverse_lookup:
-  dictionary: stroke
-  enable_completion: true
-  prefix: "`"
-  suffix: "'"
-  tips: 〔笔画〕
-  preedit_format:
-    - xlit/hspnz/一丨丿丶乙/
 
 punctuator:
   import_preset: default
