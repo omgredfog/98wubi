@@ -14,6 +14,7 @@ schema_list:
   - schema: wubi98_U
   - schema: wubi98_mkphr
   - schema: terra_pinyin
+  - schema: pinyin_simp
 
 switcher:
   caption: 〔方案選單〕
