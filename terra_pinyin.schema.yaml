@@ -11,8 +11,9 @@ schema:
     「漢語拼音」，以符號按鍵 - / < \ 輸入四聲
     拼音碼表根據 CC-CEDICT 改編
   dependencies:
-    - stroke
-
+    - wubi98_dz
+    - wubi98_ci
+    - wubi98_tw
 switches:
   - name: ascii_mode
     reset: 0
