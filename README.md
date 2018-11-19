@@ -10,11 +10,9 @@ the 98wubi tables for RIME
 * 出简不出全的单字码表
 * 含全码的码表单字码表
 * 至善98五笔词库码表
-* 打简出繁的98五笔码表
-* 繁体字以及繁体词组（由繁体字编码组词）优先的98五笔码表
 * 覆盖unicode全体汉字的超集码表
 
-![pic](http://wx4.sinaimg.cn/large/005YTWw6ly1fperyx0oxnj306u09z0so.jpg)
+![pic](http://wx4.sinaimg.cn/large/6a582a5bgy1fxd1vrayq3j20nu03tt8l.jpg)
 
 上述98五笔码表，做了一些适应于 RIME 的码表配置，使得可以默认启用 RIME 的输入建议功能，
 
