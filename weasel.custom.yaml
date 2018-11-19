@@ -1,0 +1,40 @@
+customization:
+  distribution_code_name: Weasel
+  distribution_version: 0.9.30
+  generator: "Weasel::UIStyleSettings"
+  modified_time: "Sun Feb 25 10:28:25 2018"
+  rime_version: 1.2.9
+patch:
+# ↓ 选中的配色方案
+  "style/color_scheme": ink
+# ↓ 候选字体  
+  "style/font_face": "Microsoft YaHei"
+# ↓ 候选字号  
+  "style/font_point": 15
+# ↓ 横排开关 
+  "style/horizontal": true
+# ↓ TSF嵌入模式，编码将嵌入到光标焦点处  
+  "style/inline_preedit": true
+# ↓ 候选窗口的外层边框宽度
+  "style/layout/border_width": 0
+# ↓ 候选字之间的距离  
+  "style/layout/candidate_spacing": 20
+# ↓ 候选字与其排序编号的间距
+  "style/layout/hilite_spacing": 3 
+# ↓ 「 hilite_padding 」是首候选遮罩色块儿的「高度」，
+# ↓ 其呈现结果与候选字上下「间距」( margin_y )相关
+# ↓ （ margin_y - hilite_padding ）÷ 2 = 候选窗边线与遮罩色块儿的留白值
+# ↓ 所以，建议两者的差值，是 2 的整数倍
+# ↓ 如果「 hilite_padding 」=「 margin_y 」，则是微软五笔样式
+# ↓ 「 margin_x/y 」则是候选字水平（X）间距，上下（y）间距
+# ↓ X = y 时，候选遮罩色块儿与边框的留白部分才能「等宽」
+  "style/layout/hilite_padding": 8
+  "style/layout/margin_x": 10
+  "style/layout/margin_y": 10
+# ↓ 候选窗口的最小高与宽
+  "style/layout/min_height": 0
+  "style/layout/min_width": 0
+# ↓ 首候选遮罩色块儿的的圆角弧度  
+  "style/layout/round_corner": 0
+# ↓ 当候选窗口是非TSF（编码）嵌入（光标）模式时，编码与候选遮罩色块儿之间的距离  
+  "style/layout/spacing": 20 
