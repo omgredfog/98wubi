@@ -1,7 +1,7 @@
 #!/bin/bash 
-apt install fcitx-rime 
 rm -rf /usr/share/rime-data
 rm -rf ~/.config/fcitx/rime/*
+rm -rf ~/.config/ibus/rime/*
 mkdir /usr/share/rime-data
 cp -rf ./* /usr/share/rime-data/
 chmod -R 777 /usr/share/rime-data
