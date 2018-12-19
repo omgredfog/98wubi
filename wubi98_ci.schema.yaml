@@ -55,8 +55,8 @@ speller:
   #自动顶屏
   #auto_select: false
   auto_select: true
-  #auto_clear: max_length
-  auto_clear: auto
+  auto_clear: max_length
+  #auto_clear: auto
   delimiter: "`"
   max_code_length: 4
 
