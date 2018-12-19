@@ -1,0 +1,9 @@
+# Squirrel settings
+# encoding: utf-8
+
+patch:
+  "style/color_scheme": native
+  "style/horizontal": true
+  "style/corner_radius": 8
+  "style/font_point": 18
+  "style/label_font_point": 16
