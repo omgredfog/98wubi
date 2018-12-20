@@ -85,7 +85,7 @@ translator:
   # ↓ 对已上屏的内容整合成词条儿，看需求
   encode_commit_history: false
   # ↓ 自动造词的最长字数，看需求
-  max_phrase_length: 7
+  max_phrase_length: 2
   # ↓ 逐渐提示，看需求
   enable_completion: false
   # ↓ 是否开启用户词典，以记录动态字频和用户词词频
