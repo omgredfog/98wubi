@@ -15,8 +15,6 @@ patch:
     - { when: has_menu, accept: space, send: space }
     - { when: composing, accept: Return, send: Escape }    
     - { when: has_menu, accept: Return, send: Escape }
-    - { when: has_menu, accept: Left, send: Up }    
-    - { when: has_menu, accept: Right, send: Down } 
     
   menu:
     page_size: 5
