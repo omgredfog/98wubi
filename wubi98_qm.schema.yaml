@@ -113,7 +113,6 @@ recognizer:
   import_preset: default
   patterns:
     mkst: '^[a-y]*`[a-y`]*$'
-    mkst00: "^[a-y]*`[a-y`]*$"
     punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_lookup: "^z[a-z]*'?$"
 
