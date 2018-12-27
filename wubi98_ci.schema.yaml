@@ -127,6 +127,9 @@ recognizer:
     punct: '^/([0-9]0?|[A-Za-z]+)$'
     reverse_lookup: "^z[a-z]*'?$"
 
+# 三翻译器协作版本，通过正则定义作用域，实现支持「词组」参与到临时造词的过程中来，
+# 同时修正四码唯一自动上屏字无法参与临时造词的问题，首码以切分符引导，即可进入第三翻译器的逻辑中来。
+
 mkst:
   __include: /translator
   initial_quality: 10
