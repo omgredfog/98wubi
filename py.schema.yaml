@@ -84,12 +84,12 @@ recognizer:
 
     
 qm_reverse_lookup:
-  dictionary: wubi98_qm
+  dictionary: wubi98_qm.extended
   overwrite_comment: true
   enable_completion: true
   tips: 〔五笔1〕
   
 ci_reverse_lookup:
-  dictionary: wubi98_ci
+  dictionary: wubi98_ci.extended
   enable_completion: true
   tips: 〔五笔2〕  
