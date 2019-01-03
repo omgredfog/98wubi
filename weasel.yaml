@@ -11,25 +11,25 @@ app_options:
 
 style:
   color_scheme: ink
-  font_face: Microsoft YaHei
-  font_point: 15
-  horizontal: true
-  fullscreen: false
-  inline_preedit: true
-  preedit_type: composition
   display_tray_icon: false
+  font_face: "Microsoft YaHei"
+  font_point: 13
+  fullscreen: false
+  horizontal: true
+  inline_preedit: true
   label_format: "%s."
   layout:
-    min_width: 0
-    min_height: 0
-    border_width: 0
-    margin_x: 10
-    margin_y: 10
-    spacing: 10
+    border_width: 1
     candidate_spacing: 20
-    hilite_spacing: 3
-    hilite_padding: 10
+    hilite_padding: 9
+    hilite_spacing: 5
+    margin_x: 11
+    margin_y: 11
+    min_height: 0
+    min_width: 0
     round_corner: 0
+    spacing: 20
+  preedit_type: composition
 
 preset_color_schemes:
   aqua:
@@ -490,10 +490,6 @@ preset_color_schemes:
     hilited_candidate_back_color: 0x594231
 
   flypy:
-    # description: |
-    #   小鹤飞扬：白底蓝字，红色高亮。
-    #   根据小鹤双拼官网图片制作
-    #   http://www.flypy.com/images/mr.png
     name: "小鹤飞扬／flypy"
     author: "Pal.lxk <Pal.lxk@gmail.com>"
     text_color: 0x000000

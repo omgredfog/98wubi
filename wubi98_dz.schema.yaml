@@ -1,10 +1,11 @@
+# by yanhuacuo 2019-01-02
 # Rime schema settings
 # encoding: utf-8
 
 schema:
   schema_id: wubi98_dz
   name: "98五笔·单字"
-  version: "1.53"
+  version: "5.0"
   author:
     - 發明人 王永民
   description: |
@@ -35,22 +36,25 @@ engine:
     - selector
     - navigator
     - express_editor
+    
   segmentors:
     - ascii_segmentor
     - matcher
     - affix_segmentor@mkst 
     - affix_segmentor@rvlk1
+    - affix_segmentor@zhuyin_fix
     - abc_segmentor
     - punct_segmentor
     - fallback_segmentor
+    
   translators:
     - punct_translator
     - reverse_lookup_translator
     - table_translator@rvlk1
-    - table_translator@fixed
     - table_translator
+    - table_translator@fixed    
     - table_translator@mkst
-
+    - table_translator@zhuyin_fix
   filters:
     - simplifier
     - reverse_lookup_filter@ci_reverse_lookup
@@ -58,90 +62,71 @@ engine:
     - uniquifier
     
 speller:
-
-  #自动顶屏
-  #auto_select: false
   auto_select: true
   auto_clear: max_length
-  #auto_clear: auto
   delimiter: "`"
   max_code_length: 4
-
-fixed:
-  __include: /translator
-  initial_quality: 100000
-  enable_user_dict: false
-  enable_completion: false
-  enable_sentence: false
-  enable_encoder: false
-  
   
 translator:
-  # ↓ 字典文件 
   dictionary: wubi98_dz.extended
-  # ↓ 用户词典格式，tabledb（文本） 或 userdb （二进制）。
   db_class: tabledb
-  # ↓ 该翻译器出字优先级别
-  initial_quality: 100
-  # ↓ 字符集过滤，低重形码用不着
+  initial_quality: 100000
   enable_charset_filter: false
-  # ↓ 自动造句，形码用不着
   enable_sentence: false
-  # ↓ 自动造词，看需求
-  enable_encoder: true
-  # ↓ 对已上屏的内容整合成词条儿，看需求
+  enable_encoder: false
   encode_commit_history: false
-  # ↓ 自动造词的最长字数，看需求
   max_phrase_length: 2
-  # ↓ 逐渐提示，看需求
   enable_completion: false
-  # ↓ 是否开启用户词典，以记录动态字频和用户词词频
-  enable_user_dict: true
+  enable_user_dict: false
   disable_user_dict_for_patterns:
     - "^z.*$"
 
-# ↓ 中英混输开关    
-#abc_segmentor:
-#  extra_tags:
-#    - rvlk
+fixed:
+  __include: /translator
+  initial_quality: 1000
+  enable_encoder: true
+  enable_user_dict: true
+  
+mkst:
+  __include: /translator
+  initial_quality: 10
+  enable_sentence: true
+  prefix: '`'
+  tips: "〔精准造词〕"
+  tag: mkst
 
 reverse_lookup:
+  __include: /translator
   dictionary: py
-  enable_user_dict: false
-  enable_completion: false
-  enable_sentence: false
-  enable_encoder: false
-  prefix: " "
-  suffix: "'"
-  tips: 〔拼音〕
+  tips: "〔拼音反查〕"
   preedit_format:
     - xform/([nl])v/$1ü/
     - xform/([nl])ue/$1üe/
     - xform/([jqxy])v/$1u/
   tag: rvlk2
-
     
 rvlk1:
-  dictionary: py
-  enable_user_dict: false
-  enable_completion: false
-  enable_sentence: false
-  enable_encoder: false
+  __include: /reverse_lookup
   prefix: "z"
-  suffix: "'"
-  tips: 〔拼音〕
-  preedit_format:
-    - xform/([nl])v/$1ü/
-    - xform/([nl])ue/$1üe/
-    - xform/([jqxy])v/$1u/
   tag: rvlk1
   extra_tags:
     - rvlk2  
+
+ci_reverse_lookup:
+  dictionary: wubi98_dz.extended
+  tips: "〔五笔滤镜〕"
+  tags:
+    - rvlk2
     
+zhuyin_fix:
+  __include: /translator
+  prefix: '~'
+  tips: "〔以形查音〕"
+  tag: zhuyin_fix    
+
 simplifier:
   opencc_config: s2t.json
   option_name: zh_trad
-
 
 jiayin:
   opencc_config: jiayin.json
@@ -151,14 +136,9 @@ jiayin:
     - "xform/<br>/\r/"
     - "xform/&nbsp/ /"
   tags:
-    - abc
+#    - abc
+    - zhuyin_fix
   tips: all 
-    
-punctuator:
-  import_preset: symbols
-
-key_binder:
-  import_preset: default
 
 recognizer:
   import_preset: default
@@ -167,22 +147,11 @@ recognizer:
     punct: '^/([0-9]0?|[A-Za-z]+)$'
     rvlk1: "^z[a-z]*'?$"
     rvlk2: "^z[a-z]*'?$"
+    zhuyin_fix: "~[a-y]*?$"
+    
+punctuator:
+  import_preset: symbols
 
-mkst:
-  __include: /translator
-  initial_quality: 10
-  enable_user_dict: true
-  enable_encoder: true
-  enable_sentence: true
-  enable_completion: false
-  encode_commit_history: false
-  prefix: '`'
-  tag: mkst
-
-ci_reverse_lookup:
-  prefix: " "
-  dictionary: wubi98_dz.extended
-  enable_completion: true
-  tips: "〔五笔〕"
-  tags:
-    - rvlk2
+key_binder:
+  import_preset: default
+    
