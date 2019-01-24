@@ -26,7 +26,7 @@
 
 3: Linux
 
-* 进入linux文件夹下，运行rime.sh
+* 进入本档提供的linux子文件夹下，运行rime.sh
 
 4: Android
 
