@@ -10,26 +10,26 @@ app_options:
     ascii_mode: true
 
 style:
-  color_scheme: ink
-  display_tray_icon: false
-  font_face: "Microsoft YaHei"
-  font_point: 13
-  fullscreen: false
+  color_scheme: dota_2
+  font_face: 98WB-1
+  font_point: 17
   horizontal: true
+  fullscreen: false
   inline_preedit: true
+  preedit_type: composition
+  display_tray_icon: false
   label_format: "%s."
   layout:
-    border_width: 1
-    candidate_spacing: 20
-    hilite_padding: 9
-    hilite_spacing: 5
-    margin_x: 11
-    margin_y: 11
-    min_height: 0
     min_width: 0
+    min_height: 0
+    border_width: 3
+    margin_x: 12
+    margin_y: 12
+    spacing: 10
+    candidate_spacing: 22
+    hilite_spacing: 4
+    hilite_padding: 12
     round_corner: 0
-    spacing: 20
-  preedit_type: composition
 
 preset_color_schemes:
   aqua:
@@ -490,6 +490,10 @@ preset_color_schemes:
     hilited_candidate_back_color: 0x594231
 
   flypy:
+    # description: |
+    #   小鹤飞扬：白底蓝字，红色高亮。
+    #   根据小鹤双拼官网图片制作
+    #   http://www.flypy.com/images/mr.png
     name: "小鹤飞扬／flypy"
     author: "Pal.lxk <Pal.lxk@gmail.com>"
     text_color: 0x000000
