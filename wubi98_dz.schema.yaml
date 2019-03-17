@@ -18,7 +18,7 @@ schema:
 
 switches:
   - name: ascii_mode
-    reset: 1
+    reset: 0
   - name: zh_trad
     reset: 0
     states: [ 简,繁 ]
@@ -145,8 +145,9 @@ simplifier:
   show_in_comment: true
   comment_format:
     - "xform/☯/ · /"    
-    - "xform/<br>/\r/"
-    - "xform/※※※/ /"    
+    - "xform/<br>/\r/"     
+    - "xform/※※※/ /" 
+    - "xform/※※/ /"     
     - "xform/※/ /"
   tags:
     - abc
@@ -159,8 +160,9 @@ simplifier:
   show_in_comment: true
   comment_format:
     - "xform/☯/ · /"    
-    - "xform/<br>/\r/"
-    - "xform/※※※/ /"    
+    - "xform/<br>/\r/"    
+    - "xform/※※※/ /"
+    - "xform/※※/ /"    
     - "xform/※/ /"
   tags:
 #   - abc
@@ -217,7 +219,7 @@ key_binder:
     - {accept: "Control+Shift+dollar", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+F", toggle: zh_trad, when: always}
     - {accept: "Control+Shift+H", toggle: 98wb_spelling, when: always}
-    - {accept: "Control+Shift+J", toggle: 98wb_spelling, when: always} 
+    - {accept: "Control+Shift+J", toggle: 98wb_spelling_rk, when: always} 
     - {accept: "Control+Shift+K", toggle: 98wb_spelling, when: always}
     - {accept: "Control+Shift+U", toggle: gb2312, when: always} 
     - {accept: "Control+Shift+I", toggle: gb2312, when: always} 
@@ -228,4 +230,3 @@ punctuator:
   
 menu:
   page_size: 5  
-  
